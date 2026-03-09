@@ -1,7 +1,8 @@
-public static void main(String[] args){
+import java.util.*;
+import java.io.*;
 
-private String fileName = "Car_Data.csv";
+public class Main {
+    public static ArrayList<Car> loadCars(String filename){
 
-ArrayList[Car]
-
+    }
 }

@@ -4,51 +4,64 @@
  * Car Data Analyzer
  */
 
-import java.io.*;
-import java.util.*;
-import java.util.ArrayList;
+//class that sets up variables, the constructor,
+//the getters, and the toString()
 
-/*need: 
-- private fields for all columns
-- constructor
-- getters
-- toString() Car_ID, Brand, Model, Year,
- Fuel_Type, Color, Mileage_kmpl
-*/
-
-public class Car{
-    //String set up
-    private String ID;
+public class Car {
+    //variables
+    private int carId;
     private String brand;
     private String model;
-    private String year;
-    private String fuel;
-    private String color;
-    private String milage;
+    private int year;
+    private String fuelType;
+    private double mileage;
+
+//constructor
+public Car(int carID, String brand, String model, 
+    int year, String fuelType, String color, double mileage){
+
+    this.carID = carID;
+    this.brand = brand;
+    this.model = model;
+    this.year = year;
+    this.fuelType = fuelType;
+    this.color = color;
+    this.mileage = mileage;
+    }
 
     //getters
-    public String getID{
-        return ID;
+    public int getID(){
+        return carID;
+    }
 
-    public String getBrand{
+        public int getBrand(){
         return brand;
     }
-    public String getModel{
+
+        public int getModel(){
         return model;
     }
-    public String getYear{
+
+        public int getYear(){
         return year;
     }
-    public String getFuel{
-        return fuel;
+
+        public int getFuel(){
+        return fuelType;
     }
-    public String getColor{
+
+        public int getColor(){
         return color;
     }
-    public String getMilage{
+
+        public int getMileage(){
         return mileage;
     }
 
+    //print Car details
+    public String toString(){
+        return carID + " " + brand + " " + model + " " + year +
+           " " + fuelType + " " + color + " " + mileage;
     }
 
 }
